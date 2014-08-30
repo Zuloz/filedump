@@ -16,7 +16,7 @@ $filetypes = array(
 
 /* PUBLICITY */
 
-$allpublic = "1"; // IF ENABLED ALL FILES WILL BE PUBLIC
+$allpublic = "0"; // IF ENABLED ALL FILES WILL BE PUBLIC
 
 /*  NOTE: THIS OPTION IS DISABLED IF ALLPUBLIC = 1*/
 $public = array(
