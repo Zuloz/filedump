@@ -30,7 +30,7 @@ $public = array(
 ?>
 <html>
 <head>
-<title><?php echo $name;?> - FileDump</title>
+<title><?php echo $name;?>'s - File Dump</title>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link href="http://bootswatch.com/cyborg/bootstrap.min.css" rel="stylesheet">
