@@ -4,7 +4,7 @@
 ### CONFIG ###
 
 $name = "Name"; // SET YOUR NAME HERE
-$thisversion = "1.02"; // DO NOT CHANGE THIS
+$thisversion = "1.03"; // DO NOT CHANGE THIS
 
 
 /* FILE TYPES */
@@ -138,9 +138,9 @@ $filetype1 = str_replace(".","",$filetype);
         <?php 
          $version = @file_get_contents("https://raw.githubusercontent.com/ZigiDevelopment/filedump/master/version.txt");
          if($version !== $thisversion) {
-          echo '<br><p>Version: '. $version .' </p><p style="color:red">Your filedump script is out of date. <a href="https://github.com/ZigiDevelopment/filedump">Update here!</a></p>';
+          echo '<br><p>Version: '. $thisversion .' </p><p style="color:red">Your filedump script is out of date. <a href="https://github.com/ZigiDevelopment/filedump">Update here!</a></p>';
          } else {
-          echo '<br><p>Version: '. $version .' </p>';
+          echo '<br><p>Version: '. $thisversion .' </p>';
          }
 
 
