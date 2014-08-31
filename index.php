@@ -4,7 +4,6 @@
 ### CONFIG ###
 
 $name = "Name"; // SET YOUR NAME HERE
-$version = "1.02"; // DO NOT CHANGE THIS
 
 
 /* FILE TYPES */
@@ -99,10 +98,12 @@ foreach($filelist[str_replace(".","",$filetype)] as $result) {
     echo '<th><i class="fa fa-file-o"></i></th>';
     };
 
-if(in_array($result,$public)){
+if(in_array($result,$public) && strpos($result,$filetype)){
     echo '<th><a target="_blank"  style="text-decoration: none;" title="" href="'. $result .'">'. str_replace($filetype,"",$result),'</a></th>';
     } elseif($allpublic === "1") {
     echo '<th><a target="_blank"  style="text-decoration: none;" title="" href="'. $result .'">'. str_replace($filetype,"",$result),'</a></th>';
+    } elseif(in_array($result, $public)) {
+     echo '<th><a target="_blank"  style="text-decoration: none;" title="" href="'. $result .'">'. $result .'</a></th>';
     } else {
     echo '<th>**********</th>';
     };
@@ -134,15 +135,27 @@ $filetype1 = str_replace(".","",$filetype);
 </div>
 </div>
 <div class="footer">
-         <p>&copy; <?php echo $name;?> 2014 <?php 
-         $version = @file_get_contents("http://p.zigidev.pw/pdump/version.txt")
-         if($version !== $thisversion) {
-          echo '<span style="color:red">Your filedump script is out of date. <a href="https://github.com/ZigiDevelopment/filedump">Update here!</a></span>';
-         }
-
-
-          ?><span style="float:right">Made by <a href="https://twitter.com/ZigiDev">ZigiDev</a>.</span></p>
+         <p>&copy; <?php echo $name;?> 2014<span style="float:right">Made by <a href="https://twitter.com/ZigiDev">ZigiDev</a>.</span></p>
         
 </div>
-</body>
-</html>
+
+<?php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>
